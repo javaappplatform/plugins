@@ -1,0 +1,29 @@
+/*
+	This file is part of the javaappplatform library.
+	Copyright (C) 2011-2013 Hendrik Renken
+
+	This library is subject to the terms of the Mozilla Public License, v. 2.0.
+	You should have received a copy of the MPL along with this library; see the
+	file LICENSE. If not, you can obtain one at http://mozilla.org/MPL/2.0/.
+*/
+{
+
+	"github.javaappplatform.platform.commons.platform.cache.Size" :
+	{
+		"point" : "github.javaappplatform.platform.option",
+		"name" : "contentcache",
+		"description" : "Sets the size (in MB) of the content cache. The cache handles huge data like meshes or textures transparently in the background.",
+		"isRequired" : false,
+		"ArgName" : "size(MB)",
+		"numOfArgs" : 1
+	},
+
+	"github.javaappplatform.platform.resource.java.JavaResourceSystem" :
+	{
+		"point" : [ "github.javaappplatform.platform.ResourceSystem" ],
+		"class" : "github.javaappplatform.platform.resource.java.JavaResourceSystem",
+		"scheme" : [ "java" ],
+		"singleton" : true
+	}
+
+}

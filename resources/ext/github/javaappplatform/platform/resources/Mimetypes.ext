@@ -1,0 +1,45 @@
+/*
+	This file is part of the java application platform library.
+	Copyright (C) 2011-2014 Hendrik Renken
+
+	This library is subject to the terms of the Mozilla Public License, v. 2.0.
+	You should have received a copy of the MPL along with this library; see the
+	file LICENSE. If not, you can obtain one at http://mozilla.org/MPL/2.0/.
+*/
+{
+
+	"image/jpeg" :
+	{
+		"point" : "github.javaappplatform.platform.resource.mimetype",
+		"fileext" : [ "jpeg", "jpg" ]
+	},
+
+	"image/png" :
+	{
+		"point" : "github.javaappplatform.platform.resource.mimetype",
+		"fileext" : [ "png" ]
+	},
+
+	"image/gif" :
+	{
+		"point" : "github.javaappplatform.platform.resource.mimetype",
+		"fileext" : [ "gif" ]
+	},
+
+	"image/bmp" :
+	{
+		"point" : "github.javaappplatform.platform.resource.mimetype",
+		"fileext" : [ "bmp" ]
+	},
+
+	"github.javaappplatform.platform.resource.loader.BufferedImageLoader" :
+	{
+		"point" : "github.javaappplatform.platform.resource.Loader",
+		"class" : "github.javaappplatform.platform.resource.loader.BufferedImageLoader",
+		"mimetype" : [ "image/jpeg", "image/png", "image/gif", "image/bmp" ],
+		"returntype" : [ "java.awt.image.BufferedImage", "java.awt.image.Raster" ],
+		"default" : true,
+		"singleton" : true
+	}
+
+}
