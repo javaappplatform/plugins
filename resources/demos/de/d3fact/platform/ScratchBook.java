@@ -8,9 +8,9 @@
 */
 package de.d3fact.platform;
 
-import github.javaappplatform.platform.resource.Append;
-import github.javaappplatform.platform.resource.IResourceAPI.OpenOption;
-import github.javaappplatform.platform.resource.internal.ResourceTools;
+import github.javaappplatform.resources.Append;
+import github.javaappplatform.resources.IResourceAPI.OpenOption;
+import github.javaappplatform.resources.internal.ResourceTools;
 
 import java.net.URI;
 import java.util.Arrays;

@@ -10,32 +10,32 @@
 
 	"image/jpeg" :
 	{
-		"point" : "github.javaappplatform.platform.resource.mimetype",
+		"point" : "github.javaappplatform.resources.mimetype",
 		"fileext" : [ "jpeg", "jpg" ]
 	},
 
 	"image/png" :
 	{
-		"point" : "github.javaappplatform.platform.resource.mimetype",
+		"point" : "github.javaappplatform.resources.mimetype",
 		"fileext" : [ "png" ]
 	},
 
 	"image/gif" :
 	{
-		"point" : "github.javaappplatform.platform.resource.mimetype",
+		"point" : "github.javaappplatform.resources.mimetype",
 		"fileext" : [ "gif" ]
 	},
 
 	"image/bmp" :
 	{
-		"point" : "github.javaappplatform.platform.resource.mimetype",
+		"point" : "github.javaappplatform.resources.mimetype",
 		"fileext" : [ "bmp" ]
 	},
 
-	"github.javaappplatform.platform.resource.loader.BufferedImageLoader" :
+	"github.javaappplatform.resources.loader.BufferedImageLoader" :
 	{
-		"point" : "github.javaappplatform.platform.resource.Loader",
-		"class" : "github.javaappplatform.platform.resource.loader.BufferedImageLoader",
+		"point" : "github.javaappplatform.resources.Loader",
+		"class" : "github.javaappplatform.resources.loader.BufferedImageLoader",
 		"mimetype" : [ "image/jpeg", "image/png", "image/gif", "image/bmp" ],
 		"returntype" : [ "java.awt.image.BufferedImage", "java.awt.image.Raster" ],
 		"default" : true,

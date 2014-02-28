@@ -8,23 +8,23 @@
 */
 {
 
-	"github.javaappplatform.platform.resource.server.ServerFileSystem" :
+	"github.javaappplatform.network.resources.ServerFileSystem" :
 	{
-		"point" : [ "github.javaappplatform.platform.ResourceSystem" ],
-		"class" : "github.javaappplatform.platform.resource.server.ServerFileSystem",
+		"point" : [ "github.javaappplatform.resources.ResourceSystem" ],
+		"class" : "github.javaappplatform.network.resources.ServerFileSystem",
 		"scheme" : [ "file", "ws", "dav", "davs", "http", "https" ],
 		"singleton" : true
 	},
 
-	"github.javaappplatform.platform.network.BootEntry" :
+	"github.javaappplatform.network.BootEntry" :
 	{
 		"point" : "github.javaappplatform.platform.boot",
-		"class" : "github.javaappplatform.platform.network.BootEntry",
+		"class" : "github.javaappplatform.network.BootEntry",
 		"requirements" : [ "github.javaappplatform.platform.boot.Platform" ],
 		"singleton" : true
 	},
 
-	"github.javaappplatform.platform.network.clientID" :
+	"github.javaappplatform.network.clientID" :
 	{
 		"point" : "github.javaappplatform.platform.option",
 		"name" : "clientID",
@@ -34,7 +34,7 @@
 		"numOfArgs" : 1
 	},
 
-	"github.javaappplatform.platform.network.host" :
+	"github.javaappplatform.network.host" :
 	{
 		"point" : "github.javaappplatform.platform.option",
 		"name" : "host",
@@ -44,7 +44,7 @@
 		"numOfArgs" : 1
 	},
 
-	"github.javaappplatform.platform.network.tcp" :
+	"github.javaappplatform.network.tcp" :
 	{
 		"point" : "github.javaappplatform.platform.option",
 		"name" : "hostTCP",
@@ -54,7 +54,7 @@
 		"numOfArgs" : 1
 	},
 
-	"github.javaappplatform.platform.network.udp" :
+	"github.javaappplatform.network.udp" :
 	{
 		"point" : "github.javaappplatform.platform.option",
 		"name" : "hostUDP",
@@ -64,7 +64,7 @@
 		"numOfArgs" : 1
 	},
 
-	"github.javaappplatform.platform.network.cache" :
+	"github.javaappplatform.network.cache" :
 	{
 		"point" : "github.javaappplatform.platform.option",
 		"name" : "networkfileandwscache",
@@ -73,7 +73,7 @@
 		"numOfArgs" : 0
 	},
 
-	"github.javaappplatform.platform.network.portrange" :
+	"github.javaappplatform.network.portrange" :
 	{
 		"point" : "github.javaappplatform.platform.option",
 		"name" : "portrange",
@@ -83,7 +83,7 @@
 		"numOfArgs" : 1
 	},
 
-	"github.javaappplatform.platform.network.shutdown" :
+	"github.javaappplatform.network.shutdown" :
 	{
 		"point" : "github.javaappplatform.platform.option",
 		"name" : "network_shutdown",
@@ -92,56 +92,56 @@
 		"numOfArgs" : 0
 	},
 
-	"github.javaappplatform.platform.network.interfaces.impl.Streaming" :
+	"github.javaappplatform.network.interfaces.impl.Streaming" :
 	{
-		"point" : "github.javaappplatform.platform.network.Interface",
-		"class" : "github.javaappplatform.platform.network.interfaces.impl.StreamingInterface",
+		"point" : "github.javaappplatform.network.Interface",
+		"class" : "github.javaappplatform.network.interfaces.impl.StreamingInterface",
 		"msgtypes" : [ "200", "201", "202", "203" ],
 		"singleton" : false
 	},
 
-	"github.javaappplatform.platform.network.interfaces.impl.PingInterface" :
+	"github.javaappplatform.network.interfaces.impl.PingInterface" :
 	{
-		"point" : "github.javaappplatform.platform.network.Interface",
-		"class" : "github.javaappplatform.platform.network.interfaces.impl.PingInterface",
+		"point" : "github.javaappplatform.network.Interface",
+		"class" : "github.javaappplatform.network.interfaces.impl.PingInterface",
 		"msgtypes" : [ "1", "2" ],
 		"singleton" : false
 	},
 
-	"github.javaappplatform.platform.network.alias" :
+	"github.javaappplatform.network.alias" :
 	{
 		"point" : "github.javaappplatform.platform.logging.Alias",
-		"package" : "github.javaappplatform.platform.network",
+		"package" : "github.javaappplatform.network",
 		"substitute" : "+[NET]"
 	},
 
-	"github.javaappplatform.platform.network.interfaces.impl.PoolInterface" :
+	"github.javaappplatform.network.interfaces.impl.PoolInterface" :
 	{
-		"point" : "github.javaappplatform.platform.network.Interface",
-		"class" : "github.javaappplatform.platform.network.interfaces.PlatformPoolInterface",
+		"point" : "github.javaappplatform.network.Interface",
+		"class" : "github.javaappplatform.network.interfaces.PlatformPoolInterface",
 		"msgtypes" : [ "2110", "2111", "2120", "2122", "2125", "2127" ],
 		"singleton" : false
 	},
 
-	"github.javaappplatform.platform.network.interfaces.PlatformResourceInterface" :
+	"github.javaappplatform.network.interfaces.PlatformResourceInterface" :
 	{
-		"point" : "github.javaappplatform.platform.network.Interface",
-		"class" : "github.javaappplatform.platform.network.interfaces.PlatformResourceInterface",
+		"point" : "github.javaappplatform.network.Interface",
+		"class" : "github.javaappplatform.network.interfaces.PlatformResourceInterface",
 		"msgtypes" : [ "2010", "2020", "2050", "2060", "2070", "2080", "2090" ],
 		"singleton" : false
 	},
 
-	"github.javaappplatform.platform.network.SyncedTime" :
+	"github.javaappplatform.network.SyncedTime" :
 	{
 		"point" : "github.javaappplatform.platform.time",
-		"class" : "github.javaappplatform.platform.network.SyncedTime",
+		"class" : "github.javaappplatform.network.SyncedTime",
 		"singleton" : true
 	},
 
-	"github.javaappplatform.platform.network.console.StatusCommand" :
+	"github.javaappplatform.network.console.StatusCommand" :
 	{
 		"point" : "github.javaappplatform.platform.console.Command",
-		"class" : "github.javaappplatform.platform.network.console.StatusCommand",
+		"class" : "github.javaappplatform.network.console.StatusCommand",
 		"singleton" : true,
 		"command" : "netstate",
 		"sync" : false,

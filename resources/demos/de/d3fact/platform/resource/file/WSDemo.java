@@ -8,8 +8,8 @@
 */
 package de.d3fact.platform.resource.file;
 
-import github.javaappplatform.platform.resource.IDirectory;
-import github.javaappplatform.platform.resource.localfile.WorkspaceFileSystem;
+import github.javaappplatform.resources.IDirectory;
+import github.javaappplatform.resources.localfile.WorkspaceFileSystem;
 
 import java.net.URI;
 

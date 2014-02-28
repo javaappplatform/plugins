@@ -8,11 +8,11 @@
 */
 package de.d3fact.platform;
 
+import github.javaappplatform.network.SyncedTime;
 import github.javaappplatform.platform.Platform;
 import github.javaappplatform.platform.extension.Extension;
 import github.javaappplatform.platform.extension.ExtensionRegistry;
 import github.javaappplatform.platform.extension.ServiceInstantiationException;
-import github.javaappplatform.platform.network.SyncedTime;
 import github.javaappplatform.platform.time.ITimeService;
 
 import java.util.Date;

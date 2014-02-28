@@ -8,13 +8,13 @@
 */
 package de.d3fact.platform;
 
+import github.javaappplatform.network.IPlatformNetworkAPI;
 import github.javaappplatform.network.ISession;
 import github.javaappplatform.network.client.ClientUnit;
+import github.javaappplatform.network.interfaces.DispatchMessages;
 import github.javaappplatform.network.interfaces.impl.IMessageAPI;
 import github.javaappplatform.platform.extension.ExtensionRegistry;
 import github.javaappplatform.platform.extension.ServiceInstantiationException;
-import github.javaappplatform.platform.network.IPlatformNetworkAPI;
-import github.javaappplatform.platform.network.interfaces.DispatchMessages;
 
 import java.io.IOException;
 

@@ -15,9 +15,9 @@ import github.javaappplatform.platform.extension.Extension;
 import github.javaappplatform.platform.job.ADoJob;
 import github.javaappplatform.platform.job.IDoJob;
 import github.javaappplatform.platform.job.JobPlatform;
-import github.javaappplatform.platform.resource.Resource;
-import github.javaappplatform.platform.resource.Stream;
-import github.javaappplatform.platform.resource.IResourceAPI.OpenOption;
+import github.javaappplatform.resources.Resource;
+import github.javaappplatform.resources.Stream;
+import github.javaappplatform.resources.IResourceAPI.OpenOption;
 
 import java.io.IOException;
 import java.io.OutputStream;

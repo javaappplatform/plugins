@@ -8,7 +8,7 @@
 */
 {
 
-	"github.javaappplatform.platform.commons.platform.cache.Size" :
+	"github.javaappplatform.resources.CacheSize" :
 	{
 		"point" : "github.javaappplatform.platform.option",
 		"name" : "contentcache",
@@ -18,10 +18,10 @@
 		"numOfArgs" : 1
 	},
 
-	"github.javaappplatform.platform.resource.java.JavaResourceSystem" :
+	"github.javaappplatform.resources.java.JavaResourceSystem" :
 	{
 		"point" : [ "github.javaappplatform.platform.ResourceSystem" ],
-		"class" : "github.javaappplatform.platform.resource.java.JavaResourceSystem",
+		"class" : "github.javaappplatform.resources.java.JavaResourceSystem",
 		"scheme" : [ "java" ],
 		"singleton" : true
 	}

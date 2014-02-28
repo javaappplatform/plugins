@@ -11,7 +11,7 @@
 	"github.javaappplatform.platform.networkdemo.BootEntry" :
 	{
 		"point" : "github.javaappplatform.platform.boot",
-		"class" : "github.javaappplatform.platform.resource.server.ServerFileSystemDemo",
+		"class" : "github.javaappplatform.resources.server.ServerFileSystemDemo",
 		"requirements" : [ "github.javaappplatform.platform.network.BootEntry" ],
 		"singleton" : true
 	}

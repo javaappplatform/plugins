@@ -8,34 +8,34 @@
 */
 {
 
-	"github.javaappplatform.platform.resource.localfile.LocalFileSystem" :
+	"github.javaappplatform.resources.localfile.LocalFileSystem" :
 	{
-		"point" : [ "github.javaappplatform.platform.ResourceSystem" ],
-		"class" : "github.javaappplatform.platform.resource.localfile.LocalFileSystem",
+		"point" : [ "github.javaappplatform.resources.ResourceSystem" ],
+		"class" : "github.javaappplatform.resources.localfile.LocalFileSystem",
 		"scheme" : [ "file" ],
 		"singleton" : true
 	},
 
-	"github.javaappplatform.platform.resource.localfile.WorkspaceFileSystem" :
+	"github.javaappplatform.resources.localfile.WorkspaceFileSystem" :
 	{
-		"point" : [ "github.javaappplatform.platform.ResourceSystem" ],
-		"class" : "github.javaappplatform.platform.resource.localfile.WorkspaceFileSystem",
+		"point" : [ "github.javaappplatform.resources.ResourceSystem" ],
+		"class" : "github.javaappplatform.resources.localfile.WorkspaceFileSystem",
 		"scheme" : [ "ws" ],
 		"singleton" : true
 	},
 
-	"github.javaappplatform.platform.resource.webdav.WebDavFileSystem" :
+	"github.javaappplatform.resources.webdav.WebDavFileSystem" :
 	{
-		"point" : [ "github.javaappplatform.platform.ResourceSystem" ],
-		"class" : "github.javaappplatform.platform.resource.webdav.WebDavFileSystem",
+		"point" : [ "github.javaappplatform.resources.ResourceSystem" ],
+		"class" : "github.javaappplatform.resources.webdav.WebDavFileSystem",
 		"scheme" : [ "dav", "davs" ],
 		"singleton" : true
 	},
 
-	"github.javaappplatform.platform.resource.weblink.WeblinkResourceSystem" :
+	"github.javaappplatform.resources.weblink.WeblinkResourceSystem" :
 	{
-		"point" : [ "github.javaappplatform.platform.ResourceSystem" ],
-		"class" : "github.javaappplatform.platform.resource.weblink.WeblinkResourceSystem",
+		"point" : [ "github.javaappplatform.resources.ResourceSystem" ],
+		"class" : "github.javaappplatform.resources.weblink.WeblinkResourceSystem",
 		"scheme" : [ "http", "https" ],
 		"singleton" : true
 	},

@@ -7,50 +7,50 @@
 	file LICENSE. If not, you can obtain one at http://mozilla.org/MPL/2.0/.
 */
 {
-	"github.javaappplatform.platform.resource.console.LSCommand" :
+	"github.javaappplatform.resources.console.LSCommand" :
 	{
 		"point" : "github.javaappplatform.platform.console.Command",
-		"class" : "github.javaappplatform.platform.resource.console.LSCommand",
+		"class" : "github.javaappplatform.resources.console.LSCommand",
 		"singleton" : true,
 		"command" : "ls",
 		"sync" : false,
 		"description" : "Shows information to the given URI. 'ls (rl) <URI>'. 'r' for recursive and 'l' for long format."
 	},
 
-	"github.javaappplatform.platform.resource.console.CATCommand" :
+	"github.javaappplatform.resources.console.CATCommand" :
 	{
 		"point" : "github.javaappplatform.platform.console.Command",
-		"class" : "github.javaappplatform.platform.resource.console.CATCommand",
+		"class" : "github.javaappplatform.resources.console.CATCommand",
 		"singleton" : true,
 		"command" : "cat",
 		"sync" : false,
 		"description" : "Displays the content of the given URI as text. 'cat (#lines) <URI>'."
 	},
 
-	"github.javaappplatform.platform.resource.console.MKDirCommand" :
+	"github.javaappplatform.resources.console.MKDirCommand" :
 	{
 		"point" : "github.javaappplatform.platform.console.Command",
-		"class" : "github.javaappplatform.platform.resource.console.MKDirCommand",
+		"class" : "github.javaappplatform.resources.console.MKDirCommand",
 		"singleton" : true,
 		"command" : "mkdir",
 		"sync" : false,
 		"description" : "Creates the directory at the given URI. 'mkdir <URI>'."
 	},
 
-	"github.javaappplatform.platform.resource.console.RMCommand" :
+	"github.javaappplatform.resources.console.RMCommand" :
 	{
 		"point" : "github.javaappplatform.platform.console.Command",
-		"class" : "github.javaappplatform.platform.resource.console.RMCommand",
+		"class" : "github.javaappplatform.resources.console.RMCommand",
 		"singleton" : true,
 		"command" : "rm",
 		"sync" : false,
 		"description" : "Deletes the directory or resource at the given URI. 'rm <URI>'."
 	},
 
-	"github.javaappplatform.platform.resource.console.WriteCommand" :
+	"github.javaappplatform.resources.console.WriteCommand" :
 	{
 		"point" : "github.javaappplatform.platform.console.Command",
-		"class" : "github.javaappplatform.platform.resource.console.WriteCommand",
+		"class" : "github.javaappplatform.resources.console.WriteCommand",
 		"singleton" : true,
 		"command" : "write",
 		"sync" : false,

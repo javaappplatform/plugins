@@ -9,11 +9,11 @@
 package de.d3fact.platform.resource.file;
 
 import github.javaappplatform.platform.job.JobPlatform;
-import github.javaappplatform.platform.resource.IDirectory;
-import github.javaappplatform.platform.resource.IFile;
-import github.javaappplatform.platform.resource.IResourceAPI.OpenOption;
-import github.javaappplatform.platform.resource.localfile.LocalFileSystem;
 import github.javaappplatform.platform.utils.URIs;
+import github.javaappplatform.resources.IDirectory;
+import github.javaappplatform.resources.IFile;
+import github.javaappplatform.resources.IResourceAPI.OpenOption;
+import github.javaappplatform.resources.localfile.LocalFileSystem;
 
 import java.io.BufferedWriter;
 import java.io.OutputStream;
