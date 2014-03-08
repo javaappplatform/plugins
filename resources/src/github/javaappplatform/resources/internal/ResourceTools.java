@@ -70,7 +70,7 @@ public class ResourceTools
 
 	private static final String _fileExt(String uri)
 	{
-		Set<Extension> set = ExtensionRegistry.getExtensions("github.javaappplatform.platform.resource.mimetype", null, true);
+		Set<Extension> set = ExtensionRegistry.getExtensions("github.javaappplatform.platform.resource.mimetype", null);
 		for (Extension e : set)
 		{
 			Object o = e.getProperty("fileext");
