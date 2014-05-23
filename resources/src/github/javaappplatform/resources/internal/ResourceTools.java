@@ -165,7 +165,7 @@ public class ResourceTools
 			return new URI(uri.getScheme(), uri.getUserInfo(), uri.getHost(), uri.getPort(), uri.getPath(), query, uri.getFragment());
 		} catch (URISyntaxException e)
 		{
-			LOGGER.fine("Could not clean URI "+uri+" from options parameters.", e);
+			LOGGER.trace("Could not clean URI {} from options parameters.", uri, e);
 			return uri;
 		}
 	}

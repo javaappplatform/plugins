@@ -38,7 +38,7 @@ public class JavaResourceSystem implements IResourceSystem
 		Object[] call = JavaRSTools.detectJavaCall(uri);
 		if (call != null)
 			return new JavaCall(uri, call);
-		LOGGER.fine("Could not detect appropriate java call for "+uri+". Will be handled as a file.");
+		LOGGER.trace("Could not detect appropriate java call for "+uri+". Will be handled as a file.");
 		return new DummyFile(uri, this);
 	}
 

@@ -26,7 +26,6 @@ import java.io.OutputStream;
 import java.net.URI;
 import java.net.URL;
 import java.net.URLClassLoader;
-import java.util.logging.Level;
 
 /**
  * TODO javadoc
@@ -184,24 +183,24 @@ public class ClasspathFile implements IInternalFile, IManagedResource
 	private static final Logger LOGGER = Logger.getLogger();
 	private static boolean debugThisThing(String l)
 	{
-		LOGGER.log(Level.INFO, CLASSLOADER.toString());
+		LOGGER.info(CLASSLOADER.toString());
 		if (CLASSLOADER instanceof URLClassLoader)
 		{
 			final URLClassLoader ucl = (URLClassLoader)CLASSLOADER;
 			final URL[] u = ucl.getURLs();
 			for (final URL element : u)
 			{
-				LOGGER.log(Level.FINEST, "URL in ClassPath: {0}", element);
+				LOGGER.trace("URL in ClassPath: {}", element);
 				// TODO does this work with JARs?
 				InputStream in = null;
 				try
 				{
 					final URL u2 = new URL(element, l);
-					LOGGER.log(Level.FINEST, "URL to check: {0}", u2);
+					LOGGER.trace("URL to check: {}", u2);
 					in = u2.openStream();
 				} catch (final Exception e)
 				{
-					LOGGER.log(Level.WARNING, "Unable to open stream.", e);
+					LOGGER.warn("Unable to open stream.", e);
 				} finally
 				{
 					Close.close(in);

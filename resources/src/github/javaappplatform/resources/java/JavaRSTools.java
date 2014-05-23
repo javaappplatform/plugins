@@ -86,7 +86,7 @@ class JavaRSTools
 		}
 		catch (Exception e)
 		{
-			LOGGER.finest("Could not detect appropriate java call.", e);
+			LOGGER.trace("Could not detect appropriate java call.", e);
 			return null;
 		}
 		return null;

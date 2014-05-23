@@ -51,7 +51,7 @@ public class SyncedTime implements ITimeService
 		}
 		catch (Exception e)
 		{
-			LOGGER.fine("Could not sync with server. Using local time", e);
+			LOGGER.trace("Could not sync with server. Using local time", e);
 			//do nothing we just use system currenttime millis
 		}
 		return System.currentTimeMillis();

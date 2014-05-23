@@ -9,7 +9,6 @@
 package github.javaappplatform.network;
 
 import github.javaappplatform.commons.log.Logger;
-import github.javaappplatform.network.PortRange;
 import github.javaappplatform.network.client.ClientUnit;
 import github.javaappplatform.network.interfaces.DispatchMessages;
 import github.javaappplatform.platform.Platform;
@@ -98,7 +97,7 @@ public class BootEntry implements IBootEntry
 				catch (NumberFormatException ex)
 				{
 					LOGGER.warn("Could not parse minport. Using range 49152..65535!");
-					LOGGER.fine("", ex);
+					LOGGER.trace("", ex);
 					return range;
 				}
 				try
@@ -108,7 +107,7 @@ public class BootEntry implements IBootEntry
 				catch (NumberFormatException ex)
 				{
 					LOGGER.warn("Could not parse maxport. Using range 49152..65535!");
-					LOGGER.fine("", ex);
+					LOGGER.trace("", ex);
 					return range;
 				}
 				if (minport > maxport)
