@@ -218,7 +218,6 @@ class InternalLocalFile implements IInternalFile, IManagedResource
 	/**
 	 * {@inheritDoc}
 	 */
-	@SuppressWarnings("resource")
 	@Override
 	public synchronized InputStream openStreamToRead(int options) throws IOException
 	{
@@ -247,7 +246,6 @@ class InternalLocalFile implements IInternalFile, IManagedResource
 	/**
 	 * {@inheritDoc}
 	 */
-	@SuppressWarnings("resource")
 	@Override
 	public synchronized OutputStream openStreamToWrite(int options) throws IOException
 	{
